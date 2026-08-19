@@ -1,3 +1,5 @@
+https://docs.google.com/spreadsheets/d/1nn4PmpJ_FnEXf8CZm9LclSKgRV15mJBPR_-qMbGgcG4/edit?gid=0#gid=0
+
 ## CS Computer Science and Information Technology
 
 1. Section 1: Engineering Mathematics
