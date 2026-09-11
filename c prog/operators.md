@@ -161,7 +161,30 @@ Highest
 
    ↓
 Lowest
-
+> associativity left to right.
 
 ## Mod operator
+> sign of ans is sign of dividend (first operand) in C language.
+> Operand of mod is int only.
+
+
+## Associativity in C
+Associativity tells C which direction to evaluate operators when multiple operators have the same precedence.
+- Precedence → Which operator gets priority?
+- Associativity → If operators have the same priority, which one is grouped first?
+
+| Operators                       | Associativity |   |              |
+| ------------------------------- | ------------- | - | ------------ |
+| `()` `[]` `.` `->`              | Left → Right  |   |              |
+| `++` `--` (postfix)             | Left → Right  |   |              |
+| Unary `++` `--` `!` `~` `*` `&` | Right → Left  |   |              |
+| `*` `/` `%`                     | Left → Right  |   |              |
+| `+` `-`                         | Left → Right  |   |              |
+| `<` `>` `<=` `>=`               | Left → Right  |   |              |
+| `==` `!=`                       | Left → Right  |   |              |
+| `&&`                            | Left → Right  |   |              |
+| `                               |               | ` | Left → Right |
+| `?:`                            | Right → Left  |   |              |
+| `=` `+=` `-=` etc.              | Right → Left  |   |              |
+| `,`                             | Left → Right  |   |              |
 

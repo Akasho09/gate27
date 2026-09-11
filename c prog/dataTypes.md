@@ -113,6 +113,7 @@ short temperature;
 ## 19. Integer overflow
 > Unsigned arithmetic is defined modulo one more than its maximum value.
 - same is for short also
+> USE CIRCULAR IDEA HERE.
 
 > Signed overflow is different => → undefined behavior
 
