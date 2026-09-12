@@ -46,6 +46,31 @@ x ^= y;
 x <<= 2;
 x >>= 2;
 
+### 
+```c
+int b = ++a + a++ + ++a;
+printf("%d", b);
+```
+> ❌ This has undefined behavior ... warning only in gcc.
+```yml
+   akash@Akashs-MacBook-Air codes % gcc modifyOps.c 
+   modifyOps.c:6:13: warning: multiple unsequenced modifications to 'a' [-Wunsequenced]
+      6 |     int b = ++a + a++ + ++a;
+         |             ^      ~~
+   1 warning generated.
+```
+- The problem is that a is modified multiple times within the same expression:
+++a → increments a before using it
+a++ → uses a, then increments it
+++a → increments a before using it
+- There is no sequencing between these modifications imposed by the + operator.
+- So C does not define whether the compiler evaluates:
+> Do not modify the same variable more than once between sequence points / without proper sequencing.
+
+
+
+
+
 3. Relational operators
 - Used to compare values.
 | Operator | Meaning               |
@@ -60,11 +85,18 @@ x >>= 2;
 4. Logical operators
 - Used to combine or negate conditions.
 - 
-| Operator | Meaning     |   |            |
-| -------- | ----------- | - | ---------- |
-| `&&`     | Logical AND |   |            |
-| `        |             | ` | Logical OR |
-| `!`      | Logical NOT |   |            |
+| Operator          | Symbol | Meaning                                     | Example |
+| ----------------- | ------ | ------------------------------------------- | ------- |
+| **AND**           | ∧      | True only if both statements are true       | P ∧ Q   |
+| **OR**            | ∨      | True if at least one statement is true      | P ∨ Q   |
+| **NOT**           | ¬      | Reverses the truth value                    | ¬P      |
+| **XOR**           | ⊕      | True if exactly one statement is true       | P ⊕ Q   |
+| **Implication**   | →      | “If P, then Q”                              | P → Q   |
+| **Biconditional** | ↔      | True when P and Q have the same truth value | P ↔ Q   |
+
+- AND
+    - -2&1 ==> True.
+    - 0 & 1 => false
 
 5. Increment and decrement operators
 - These change a value by 1.
@@ -93,6 +125,7 @@ x++;
 
 9. sizeof operator
 - sizeof tells you the size of a type or object in bytes.
+> does not print or execute whats inside sizeof
 
 10. Address-of operator — &
 - This & is different from bitwise AND depending on context.
@@ -187,4 +220,21 @@ Associativity tells C which direction to evaluate operators when multiple operat
 | `?:`                            | Right → Left  |   |              |
 | `=` `+=` `-=` etc.              | Right → Left  |   |              |
 | `,`                             | Left → Right  |   |              |
+
+## Bitwise Operators in C
+- 
+| Operator | Name                     | Example    |    |    |
+| -------- | ------------------------ | ---------- | -- | -- |
+| `&`      | Bitwise AND              | `a & b`    |    |    |
+| `        | `                        | Bitwise OR | `a | b` |
+| `^`      | Bitwise XOR              | `a ^ b`    |    |    |
+| `~`      | Bitwise NOT / Complement | `~a`       |    |    |
+| `<<`     | Left shift               | `a << n`   |    |    |
+| `>>`     | Right shift              | `a >> n`   |    |    |
+
+
+### 4. Bitwise NOT ~
+> ~a = -(a+1)
+
+> ~INT_MAX = -2147483648
 
