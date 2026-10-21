@@ -213,6 +213,7 @@ Associativity tells C which direction to evaluate operators when multiple operat
 | Unary `++` `--` `!` `~` `*` `&` | Right → Left  |   |              |
 | `*` `/` `%`                     | Left → Right  |   |              |
 | `+` `-`                         | Left → Right  |   |              |
+| `<<` `>>`                       | Left → Right  |   | Bitwise ops. |
 | `<` `>` `<=` `>=`               | Left → Right  |   |              |
 | `==` `!=`                       | Left → Right  |   |              |
 | `&&`                            | Left → Right  |   |              |
@@ -220,6 +221,8 @@ Associativity tells C which direction to evaluate operators when multiple operat
 | `?:`                            | Right → Left  |   |              |
 | `=` `+=` `-=` etc.              | Right → Left  |   |              |
 | `,`                             | Left → Right  |   |              |
+
+![alt text](image.png)
 
 ## Bitwise Operators in C
 - 

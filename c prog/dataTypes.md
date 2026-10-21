@@ -51,7 +51,7 @@ int temperature = -10;
 
 ### How big is int?
 - This is important:
-> C does not guarantee that int is exactly 4 bytes on every implementation.
+    > C does not guarantee that int is exactly 4 bytes on every implementation.
 - It guarantees minimum ranges and relationships between integer types.
 - On most modern systems:
 > int = 4 bytes
