@@ -20,7 +20,7 @@
 > REMEMBER UNSTABLE
 
 ## Bubble sort
-- ubble Sort is a simple sorting algorithm that repeatedly compares adjacent elements and swaps them if they are in the wrong order.
+- bubble Sort is a simple sorting algorithm that repeatedly compares adjacent elements and swaps them if they are in the wrong order.
 - Working principle: After each pass in ascending order, the largest unsorted element moves to the end, like a bubble rising to the surface.
 - 4. Time and space complexity
     - Best case	O(n). Already sorted, with early stopping
@@ -66,6 +66,7 @@
 
 ## Insertion Sort
 - Insertion Sort builds a sorted array one element at a time by inserting each element into its correct position.
+- start from 2 and place it at correct poistion on left. 
 - Approach: Divide the array into a sorted part and an unsorted part.
 - Take the next element (key), shift larger elements to the right, and insert the key in the correct position.
 - Stable: Yes.
