@@ -54,3 +54,23 @@ Data link layer: error detection, Medium Access Control, Ethernet; Distance vect
 IPv4 - Fragmentation, CIDR Notation, Network Address Translation; TCP- flow control and congestion
 control, socket API; DNS and HTTP.
 
+
+
+---
+Section 1: Engineering Mathematics
+Section 2: Digital Logic
+
+Section 6: Theory of Computation
+Section 7: Compiler Design
+
+Section 3: Computer Organization and Architecture
+
+Section 4: Programming and Data Structures
+Section 5: Algorithms
+Section 8: Operating System
+Section 9: Databases
+Section 10: Computer Networks.  
+
+
+> 500+80+120+60 = 76% + 4%(apti) => 80%
+> 400+60+80+40+80 = 66/110 = 60%
