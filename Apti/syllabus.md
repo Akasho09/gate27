@@ -1,0 +1,21 @@
+## GA General Aptitude
+
+1. Section 1: Verbal Aptitude
+Basic English grammar: tenses, articles, adjectives, prepositions, conjunctions, verb-noun agreement, and other
+parts of speech.
+Basic vocabulary: words, idioms, and phrases in context.
+Reading and comprehension, Narrative sequencing.
+
+2. Section 2: Quantitative Aptitude
+Data interpretation: data graphs (bar graphs, pie charts, and other graphs representing data), 2-and 3-dimensional
+plots, maps, and tables.
+Numerical computation and estimation: ratios, percentages, powers, exponents and logarithms, permutations and
+combinations, and series. Mensuration and geometry, Elementary statistics and probability.
+
+3. Section 3: Analytical Aptitude
+Logic: deduction and induction, Analogy, Numerical relations and reasoning.
+
+4. Section 4: Spatial Aptitude
+Transformation of shapes: translation, rotation, scaling, mirroring, assembling, and grouping paper folding,
+cutting, and patterns in 2 and 3 dimensions.
+
