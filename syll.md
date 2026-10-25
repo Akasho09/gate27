@@ -69,7 +69,7 @@ Section 4: Programming and Data Structures
 Section 5: Algorithms
 Section 8: Operating System
 Section 9: Databases
-Section 10: Computer Networks.  
+Section 10: Computer Networks.
 
 
 > 500+80+120+60 = 76% + 4%(apti) => 80%
