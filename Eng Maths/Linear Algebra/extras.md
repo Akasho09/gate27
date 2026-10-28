@@ -25,12 +25,26 @@
     - At least one eigenvalue = 0	        Singular matrix
     - All eigenvalues non-zero	        Non-singular matrix
 
+3. 
+[ 1 1 
+  0 1 ]
 
-
-
+=> A^n = [ 1 n 
+           0 1 ]
+            
+4. 
+[ 1 1 1 
+  0 1 1
+  0 0 1 ]
+=> A^n = [ 1 n sum(n)
+           0 1 n 
+           0 0 1     ]
+ 
+ 
 ### to do 
 
 1. Cayley hamiltopn theorem.
 
 2. 
 ![alt text](image-1.png)
+
