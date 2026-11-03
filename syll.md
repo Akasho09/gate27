@@ -57,9 +57,9 @@ control, socket API; DNS and HTTP.
 
 
 ---
-Section 1: Engineering Mathematics
 Section 2: Digital Logic
 
+Section 1: Engineering Mathematics
 Section 6: Theory of Computation
 Section 7: Compiler Design
 
