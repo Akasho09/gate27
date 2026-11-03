@@ -66,8 +66,7 @@ i.e On frame loss => Retransmit from the missing frame onward.
 ![alt text](image.png)
 
 - Example Problem: Data = 011100011110, ED = 0111, After bit stuffing -> 011010001101100.
-> whenever ED appears in data , append new bit at the last bit...
-
+> ED = 0111 => whenever 2 1's appear in data , stuff a 0.
 
 ## Error Detection and Correction :
 - Based on redundunt bits ie send more or extra bits.

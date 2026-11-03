@@ -16,6 +16,25 @@
 
 2. 4 Layer ===> 5 Layer + (Data Link and Physical Layer become Network Acesses Layer)
 
+## Data → Segment → Packet → Frame → Bits
+| OSI Layer | Layer Name | Data Unit (PDU) |
+|---:|---|---|
+| 7 | Application | Data |
+| 6 | Presentation | Data |
+| 5 | Session | Data |
+| 4 | Transport | Segment (TCP) / Datagram (UDP) |
+| 3 | Network | Packet |
+| 2 | Data Link | Frame |
+| 1 | Physical | Bits |
+
+- PDU (Protocol Data Unit): Data unit handled by a specific layer, including that layer's protocol control information (usually its header, and sometimes a trailer) plus the data.
+- SDU (Service Data Unit): Data passed from the layer above to a layer to be processed by that layer. 
+       - ISKI ServicING HOTI HAI
+
+> PDU = PCI + SDU
+- Here, PCI (Protocol Control Information) is typically the header added by the current layer. A trailer may also be included.
+
+
 ## Physical layer
 - Last layer of sender and first of Reciever.
 
