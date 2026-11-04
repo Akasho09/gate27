@@ -59,18 +59,18 @@ control, socket API; DNS and HTTP.
 ---
 Section 2: Digital Logic
 
-Section 1: Engineering Mathematics
+Section 1: Engineering Mathematics ....✅
 Section 6: Theory of Computation
 Section 7: Compiler Design
 
 Section 3: Computer Organization and Architecture
 
-Section 4: Programming and Data Structures
-Section 5: Algorithms
-Section 8: Operating System
+Section 4: Programming and Data Structures ✅
+Section 5: Algorithms ✅
+Section 8: Operating System ✅
 Section 9: Databases
-Section 10: Computer Networks.
-
+Section 10: Computer Networks. ✅
+Section 11: Aptitude n English   ....✅
 
 > 500+80+120+60 = 76% + 4%(apti) => 80%
 > 400+60+80+40+80 = 66/110 = 60%
