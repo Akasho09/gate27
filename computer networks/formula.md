@@ -33,6 +33,7 @@
 3. If Netwrok id bits are all 1's and Host id bits are all 0's => Network Subnet mask.
 
 4. If Netwrok id bits are all 1's and Host id bits are all 1's => Limited Broadcast Address (Always Destination IP).
+- 255.255.255.255
 
 ### Private IPv4 blocks
 - `10.0.0.0/8`

@@ -48,6 +48,7 @@ Header length is multiple of 4
 8. Fragment Offset	: Fragment position, measured in 8-byte units
 
 8. TTL :  Limits packet lifetime; reduced at each router
+> TTL limits how many router hops a packet can traverse before being discarded.
 
 9. Protocol : Identifies upper-layer protocol (TCP = 6, UDP = 17, ICMP = 1)
 
@@ -73,6 +74,8 @@ Header length is multiple of 4
 
 ![alt text](image-4.png)
 
+> If MTU is `1000BYTES` and Header size is 20Bytes then data size wont be 980 rather it will be `976BYTES` EXCEPT Fpr the last Data Fragment.
+[980/8] * 8 = 976
 
 ## Options + Padding 
 - Record Route.

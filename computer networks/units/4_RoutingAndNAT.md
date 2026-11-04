@@ -59,3 +59,6 @@
 1. Static NAT: one private IP ↔ one public IP.
 2. Dynamic NAT: public IP allocated from a pool.
 3. PAT: many private IPs share one public IP through port translation.
+
+> NAT Router uses Public IP of its and also the port no of the Host device isnt used.
+

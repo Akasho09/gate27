@@ -56,6 +56,10 @@ i.e On frame loss => Retransmit from the missing frame onward.
 
 > Efficency = (2^(m-1)) * 1/(1+2x)
 
+- For sliding-window utilization, a common formula (assuming negligible ACK transmission time and no errors) is:
+> Ws >= 1 + (2*Tp)/Tt
+> No. of sequence bits = ceil(log2 Ws) 
+
 ## Framing in Data Link Layer :
 
 1.  Character/Byte Stuffing
@@ -222,3 +226,12 @@ a = PD/TT
 | FCS | CRC-based error detection |
 | ED | Marks the end of the frame |
 | FS | Indicates frame status, such as address recognized and frame copied |
+
+
+> Effective data rate = Efficiency * Bandwidth
+
+- Efficiency =  (N * Td) / 
+                N(Td+Rl) + Rl
+
+
+    

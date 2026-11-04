@@ -11,10 +11,30 @@
 
 ![alt text](image-6.png)
 
+> URG flag = 1 and URG pointer = 45 ==> 
+- URG pointer = 45 so data from 0th byte till 45th byte are urgent so 46bytes are urgent
+data.
+
 ## Congestion control
 
 ![alt text](image-7.png)
 ![alt text](<Screenshot 2026-11-04 at 4.27.08 PM.png>)
+
+## UDP 
+is a connectionless, transport-layer protocol that sends independent datagrams without guaranteeing delivery, ordering, or duplicate protection.
+- 1. Key features
+1. Connectionless: No connection establishment or three-way handshake.
+2. Unreliable: No built-in guarantee of delivery.
+3. No sequencing guarantee: Datagrams may arrive out of order.
+4. Low overhead: Small header of only 8 bytes.
+5. Message-oriented: Preserves datagram boundaries.
+6. No built-in flow or congestion control like TCP.
+7. Supports unicast, multicast and broadcast where the underlying network supports them.
+8. Checksum for error detection.
+![alt text](image-8.png)
+
+> Source port is ephemeral, destination port is well-known → usually client to server.
+> Source port is well-known, destination port is ephemeral → usually server to client.
 
 ## DNS :
 - DNS is an application-layer protocol that translates domain names (e.g., google.com) into IP addresses so that clients can locate servers on a network.
@@ -109,7 +129,7 @@
 > sBLAsrc
 ```yml
 TCP Server                  TCP Client   
-                             
+
 socket()                    socket()  
 
 bind()
