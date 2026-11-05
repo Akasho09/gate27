@@ -87,9 +87,11 @@ A CFG is represented by a four-tuple:
 | Reversal | YES |
 | Homomorphism | YES |
 | Inverse homomorphism | YES |
-| Intersection | NO |
-| Complement | NO |
-| Difference | NO |
+>| Intersection | NO |
+>| Complement | NO |
+>| Difference | NO |
+
+- complement of CFL is `context-sensitive`.
 
 ### Remove Unit Production from CFG(Context Free Grammar)
 1. Make graph of Unit prductions 
@@ -113,3 +115,22 @@ A CFG is represented by a four-tuple:
 8. DCFLs are not closed under union or general intersection.
 > 9. NFA can have less or greater or equal number of states with its corresponding min DFA.
 
+
+## CNF 
+- A CFG is in CNF if every production is of one of these forms:
+>A --> BC
+>A --> a
+
+## Greibach Normal Form (GNF)
+- A CFG is in GNF if every production has the form:
+> A --> a\alpha
+e.g. : A--> aABCA
+- alpha is a possibly empty string of non-terminals.
+
+
+| Basis | CNF (Chomsky Normal Form) | GNF (Greibach Normal Form) |
+|---|---|---|
+| 3. RHS starts with | Terminal or non-terminal | Always a terminal |
+| 10. Parse tree | Binary branching (excluding terminal productions) | Not necessarily binary branching |
+| 11. Production steps for string of length n |`2n-1`| `n`(leftmost derivation)|
+| 12. Main application | CYK parsing algorithm | PDA and derivation analysis |
