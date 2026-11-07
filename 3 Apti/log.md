@@ -39,3 +39,4 @@
 ![alt text](image-4.png)
 > ∣A∪B∣=∣A∣+∣B∣−∣A∩B∣
 
+6. Sitting around table , change the left and rights of persons.
