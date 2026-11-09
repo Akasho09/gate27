@@ -19,3 +19,20 @@ example 4GB => 2^32 Bytes => 32 bytes is size of Log address by CPU .
 3. MMU	Performs address translation
 
 
+## Simple Average Method 
+> T_(n+1)= Sum of actual burst times / Number of processes
+
+## Exponential Averaging Method 
+> T_(n+1)= (alpha * t_n) + (1-alpha)T_n
+- T_n = Previous predicted burst time
+- t_n  = Actual burst time
+- alpha = Smoothing factor
+----
+- Given T1 and t1 we can calculate T2.
+- using T2 and if again given t2 we can calculate T3... so on
+
+## TSL (Test-and-Set Lock)
+1. TSL is an atomic hardware instruction.
+2. TSL guarantees mutual exclusion.
+3. TSL does not guarantee bounded waiting, so starvation is possible.
+

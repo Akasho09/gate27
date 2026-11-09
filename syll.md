@@ -62,7 +62,7 @@ Section 2: Digital Logic
 
 Section 1: Engineering Mathematics ....✅
 Section 6: Theory of Computation ....✅
-Section 7: Compiler Design
+Section 7: Compiler Design ....✅
 
 Section 3: Computer Organization and Architecture
 
