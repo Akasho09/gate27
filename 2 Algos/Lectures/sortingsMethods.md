@@ -21,7 +21,7 @@
 
 ## Bubble sort
 - bubble Sort is a simple sorting algorithm that repeatedly compares adjacent elements and swaps them if they are in the wrong order.
-- Working principle: After each pass in ascending order, the largest unsorted element moves to the end, like a bubble rising to the surface.
+- Working principle: After each pass in ascending order, the largest unsorted element moves to the end, `like a bubble rising to the surface.`
 - 4. Time and space complexity
     - Best case	O(n). Already sorted, with early stopping
     - Average case	O(n^2)	Randomly ordered array
@@ -93,6 +93,39 @@
 | Main operation | Shifting | Adjacent swaps | Selecting minimum | Partitioning |
 
 ## Radix sort :
+Radix Sort is a `non-comparison-based` sorting algorithm that sorts elements by processing individual digits or characters, starting from either the least significant digit (LSD) or most significant digit (MSD).
+- It sorts numbers digit by digit using a stable sorting algorithm, usually Counting Sort.
+- Radix Sort performs sorting in three passes for a array with <999 values.
+### Algorithm
+1. Find the maximum element in the array.
+2. Start with the least significant digit (units place).
+3. Apply a stable sorting algorithm (Counting Sort) based on the current digit.
+4. Move to the next digit (tens, hundreds, etc.).
+5. Repeat until all digits are processed.
+
+### Complexity
+Let:
+- \(n\) = Number of elements.
+- \(d\) = Maximum number of digits.
+- \(b\) = Base/radix (e.g., 10 for decimal numbers).
+
+1. Space Complexity:
+> O(n+b)
+
+2. Time Complexity:
+> O(d(n+b))
+
+### 4. Important Properties
+1. Comparison-based : 	No
+2. Stable : 	Yes (if stable sort is used per digit)
+3. In-place	 : No (standard implementation)
+4. Adaptive	: No
+5. Sorting technique : 	Digit-based
+
+
+## Counting Sort
+
+
 
 
 # Binary serach :

@@ -31,8 +31,15 @@ example 4GB => 2^32 Bytes => 32 bytes is size of Log address by CPU .
 - Given T1 and t1 we can calculate T2.
 - using T2 and if again given t2 we can calculate T3... so on
 
-## TSL (Test-and-Set Lock)
-1. TSL is an atomic hardware instruction.
-2. TSL guarantees mutual exclusion.
-3. TSL does not guarantee bounded waiting, so starvation is possible.
+## Bounded Waiting 
+is a property of the Critical Section Problem that ensures a process does not have to wait indefinitely to enter its critical section after requesting entry.
+- Deadlock means processes are permanently blocked.
+- Bounded Waiting concerns whether a waiting process can be postponed indefinitely while other processes continue entering.
+
+## A Process switch generally takes more time than switch between user and kernel mode as it invloves both.
+
+## 26. Semaphore is used for:
+(a) Synchronization  ✅
+(b) Deadlock Avoidance
+(c) Bounded Waiting 
 

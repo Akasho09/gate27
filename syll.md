@@ -75,3 +75,16 @@ Section 11: Aptitude n English   ....✅
 
 > 500+80+120+60 = 76% + 4%(apti) => 80%
 > 400+60+80+40+80 = 66/110 = 60%
+
+
+---
+## Practice Tg 
+1. Operating System 
+1  ✅
+2 ...
+
+2. Algorithms
+1  ✅
+2  ✅
+
+
