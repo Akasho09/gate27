@@ -24,6 +24,22 @@
 | `*(*(grid + i) + j)`    | Element at row `i`, column `j`  |
 | `*(grid + i)` | Row `i` |
 
+4. The no. of possible binary trees with 3 nodes are:
+> catalan’s number
+> (2n)_C_n / ( n+1)
+
+5. In Data Structures (Trees and Graphs), the 
+`degree` of a node means the number of children (or direct descendants) of that node.
+- Let:
+- n_0 = Number of nodes having degree 0 (leaf nodes).
+- n_1 = Number of nodes having degree 1.
+- n_2 = Number of nodes having degree 2.
+- For any non-empty binary tree:
+Number of edges=Number of nodes-1
+Therefore,
+> n_1 + 2*n_2=  n_0 + n_1 + n_2 - 1
+
+
 
 
 

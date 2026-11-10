@@ -81,10 +81,15 @@ Section 11: Aptitude n English   ....✅
 ## Practice Tg 
 1. Operating System 
 1  ✅
-2 ...
+2  ✅
 
 2. Algorithms
 1  ✅
 2  ✅
+
+3. Programming and Data Structures 
+1  ✅
+
+4. 
 
 

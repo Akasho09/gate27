@@ -43,3 +43,13 @@ is a property of the Critical Section Problem that ensures a process does not ha
 (b) Deadlock Avoidance
 (c) Bounded Waiting 
 
+## Resource allocation graph
+1. In a single instance Resource allocation graph (Wait for graph) cycle is a:
+(b) Sufficient condition for deadlock
+
+2. In a Multiple instance Resource allocation graph, cycle is a:
+(a) Necessary condition for deadlock 
+
+## The depth of a node in a tree data structure is the number of edges along the unique path from the root node to that specific node.
+
+## catalan’s number
