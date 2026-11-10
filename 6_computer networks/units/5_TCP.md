@@ -11,9 +11,16 @@
 
 ![alt text](image-6.png)
 
-> URG flag = 1 and URG pointer = 45 ==> 
-- URG pointer = 45 so data from 0th byte till 45th byte are urgent so 46bytes are urgent
-data.
+1. Flags 
+    1. URG (Urgent) flag 
+    - in the TCP header indicates that the data in the TCP segment contains urgent information that should be processed with priority.
+    - How URG works
+        1. Sender sets the URG = 1 flag.
+        2. The Urgent Pointer field becomes valid.
+        3. The Urgent Pointer identifies the `end of the urgent data` (in the traditional TCP interpretation).
+        - If Urgent Pointer = 40 ==> 0 to 40th byte are URG ===> 41 bytes.
+        4. The receiver can process the urgent data ahead of normal data.
+
 
 ## Congestion control
 

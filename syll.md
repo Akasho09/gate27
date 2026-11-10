@@ -71,7 +71,7 @@ Section 5: Algorithms ✅
 Section 8: Operating System ✅
 Section 9: Databases
 Section 10: Computer Networks. ✅
-Section 11: Aptitude n English   ....✅
+Section 11: Aptitude n English   .... ✅
 
 > 500+80+120+60 = 76% + 4%(apti) => 80%
 > 400+60+80+40+80 = 66/110 = 60%
@@ -82,14 +82,21 @@ Section 11: Aptitude n English   ....✅
 1. Operating System 
 1  ✅
 2  ✅
+3 ...
 
 2. Algorithms
 1  ✅
 2  ✅
+3  ✅
+
 
 3. Programming and Data Structures 
 1  ✅
+2  ✅
+3  ✅
 
-4. 
+
+4. Computer Networks
+
 
 

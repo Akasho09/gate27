@@ -118,3 +118,17 @@ short temperature;
 > Signed overflow is different => → undefined behavior
 
 > similarly for char system also %256 here
+
+## Macro
+A macro in C is a name or code fragment defined using the #define preprocessor directive.
+- The C preprocessor replaces macros with their corresponding values or code before the actual compilation begins.
+```c
+#define PI 3.14
+#define MAX 100
+
+int main() {
+    float area = PI * 5 * 5;
+}
+
+```
+

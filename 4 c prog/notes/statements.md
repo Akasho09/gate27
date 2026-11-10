@@ -113,3 +113,25 @@ printf("Hello");
 ;
 ```
 > is an empty (null) statement
+
+## 1. Declaration vs Definition
+1. Declaration
+- A declaration introduces an identifier and specifies its properties, such as its data type.
+```c
+extern int x;   // Declaration
+int sum(int, int);  // Function declaration (prototype)
+```
+- extern int x; tells the compiler that an integer variable x exists.
+- int sum(int, int); tells the compiler about a function named sum, its return type and parameter types.
+
+2. Definition
+A definition is a declaration that also creates an object or provides the function's implementation.
+```c
+int x = 10;  // Variable definition
+
+int sum(int a, int b) {  // Function definition
+    return a + b;
+}
+```
+
+

@@ -4,8 +4,6 @@
 1. `External Sorting` is a sorting technique used when the data to be sorted is too large to fit entirely into the main memory (RAM).
 2. 
 
-
-
 ## Inversions and Insertion sort:
 For an array \(A\), a pair of indices (i,j) is called an inversion if:
 > i<j and A[i]>A[j]
@@ -28,6 +26,8 @@ For an array \(A\), a pair of indices (i,j) is called an inversion if:
 
 3. 1 + 1/4 + 1/9 + ... + 1/n²                    → Θ(1)
 
+4. log1 + log2 + .... logn = log(n!) = n.logn
+
 
 ## GCD Complexity :
 > O(log(MAX(n,m)))
@@ -36,6 +36,11 @@ For an array \(A\), a pair of indices (i,j) is called an inversion if:
 ## Max and min in array : Pairwise comparison
 > Even = 3/2*n - 2
 > Odd : 3(n-1)/2
+- If n is odd then initialize min and max as first element.
+- If n is even then initialize min and max as minimum and maximum of the first two
+elements respectively.
+- For rest of the elements, pick them in pairs and compare their maximum and minimum
+with max and min respectively.
 
 ##  Recurrence Relation and Time Complexity 
 | Recurrence Relation | Time Complexity |
@@ -50,7 +55,9 @@ or
 T(n)=Cn * (1+1/3+1/9+.....)
 ==> Geometric Progression (GP) with r<1. ====> shrinking.
 
+## Complexities :
 
-## 
+1. 2^n×2^n ie 2^2n CAN NOT be written as Θ(2^n)
+
 
 

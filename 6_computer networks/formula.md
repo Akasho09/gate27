@@ -234,8 +234,10 @@ Let original payload be \(P\) bytes and outgoing MTU be \(M\) bytes. With a 20-b
 
 ### UDP header
 - Fixed header size: 8 bytes.
-- Four 16-bit fields: Source Port, Destination Port, Length, Checksum.
+- Four 16-bit fields: Source `Port`, Destination Port, Length, Checksum.
 - UDP Length includes header and data; minimum legal length is 8 bytes.
+> If port value is >1023 then it's a client 
+- and if <1023 then it's server.
 
 ## 8. Token bucket
 

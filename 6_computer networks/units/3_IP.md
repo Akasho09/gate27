@@ -38,8 +38,12 @@ Header length is multiple of 4
 
 4. DSCP/ECN : Type of service 
 
-5. Total Length : Entire IP packet, header + data
-2^16
+5. Total Length : 
+- The Total Length field specifies the total size of an IP packet (datagram), including `both the IP header and the data` (payload).
+- Minimum value: 20 bytes (minimum IPv4 header size).
+- Maximum value: 65,535 bytes. (2^16-1)
+- It is measured in bytes, not bits.
+- It includes the IP header and payload, but excludes the Ethernet header.
 
 6. Identification : Identifies fragments of a datagram
 
@@ -49,6 +53,12 @@ Header length is multiple of 4
 
 8. TTL :  Limits packet lifetime; reduced at each router
 > TTL limits how many router hops a packet can traverse before being discarded.
+- TTL (Time To Live) in the IP header specifies the maximum number of hops (routers) an IP packet can pass through before being discarded.
+- How TTL works
+    1. The sender assigns an initial TTL value to the IP packet.
+    2. Every router (hop) decreases the TTL by 1.
+    3. If TTL becomes 0, the router discards the packet.
+    4. The router sends an ICMP Time Exceeded message to the sender.
 
 9. Protocol : Identifies upper-layer protocol (TCP = 6, UDP = 17, ICMP = 1)
 

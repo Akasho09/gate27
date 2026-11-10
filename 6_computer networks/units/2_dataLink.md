@@ -56,8 +56,9 @@ i.e On frame loss => Retransmit from the missing frame onward.
 
 > Efficency = (2^(m-1)) * 1/(1+2x)
 
-- For sliding-window utilization, a common formula (assuming negligible ACK transmission time and no errors) is:
-> Ws >= 1 + (2*Tp)/Tt
+### Window size formula :
+- To achieve 100% link utilization, the sender should be able to `transmit continuously until the ACK for the first frame returns`.
+> => W * T_t >= 2T_p + T_t
 > No. of sequence bits = ceil(log2 Ws) 
 
 ## Framing in Data Link Layer :
@@ -227,11 +228,22 @@ a = PD/TT
 | ED | Marks the end of the frame |
 | FS | Indicates frame status, such as address recognized and frame copied |
 
+### 
+1. Ring Latency
+- Ring latency is the total time taken by a data packet or frame to travel around a complete ring network.
+
+2. Ring Efficiency
+
+Ring efficiency measures how effectively a ring network utilizes its available bandwidth for transmitting useful data.
+
 
 > Effective data rate = Efficiency * Bandwidth
 
 - Efficiency =  (N * Td) / 
                 N(Td+Rl) + Rl
+
+> or Efficiency = N / (N+(N+1)a)
+Where a = propagation delay/Transmission delay
 
 
     
