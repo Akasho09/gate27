@@ -61,9 +61,7 @@ control, socket API; DNS and HTTP.
 Section 2: Digital Logic
 Section 3: Computer Organization and Architecture
 
-
 Section 9: Databases
-
 
 Section 1: Engineering Mathematics ....✅
 Section 6: Theory of Computation ....✅
