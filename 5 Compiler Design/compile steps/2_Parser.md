@@ -56,7 +56,7 @@ An LL(1) Parser is a `top-down` predictive parser that reads input from left to 
     then a parsing error is reported.
 
 ## LR(0) PARSER 
-- LR(0) is a bottom-up parser that reads input from Left to right and constructs a Rightmost derivation in reverse, using zero lookahead symbols.
+- LR(0) is a `bottom-up parser` that reads input from Left to right and constructs a Rightmost derivation in reverse, using zero lookahead symbols.
 ![alt text](image-2.png)
 
 1. What does LR(0) mean?

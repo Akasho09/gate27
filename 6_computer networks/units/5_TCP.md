@@ -21,6 +21,25 @@
         - If Urgent Pointer = 40 ==> 0 to 40th byte are URG ===> 41 bytes.
         4. The receiver can process the urgent data ahead of normal data.
 
+## TCP Transmission :
+1. IRTT	: Initial RTT estimate
+
+2. NRTT	: New RTT measurement
+
+3. Estimated RTT :	Smoothed RTT estimate
+> EstimatedRTT = α*OldRTT + (1-α)NewRTT
+
+4. DevRTT	: Variation in RTT
+- If Initial deviation is given then `Jacobson’s algorithm,`
+> Next Deviation DN = | IRTT – NRTT | = | 45 – 60 | sec = 15 sec
+> Expected deviation DE = αDI + (1 – α)DN
+
+5. RTO	: Retransmission Timeout
+> Timeout =  EstimatedRTT + 4*DevRTT
+
+6. α (Alpha)
+- Smoothing factor used to calculate the updated estimated RTT.
+
 
 ## Congestion control
 

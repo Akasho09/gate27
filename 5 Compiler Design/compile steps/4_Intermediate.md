@@ -44,8 +44,3 @@ It breaks complex expressions into simple instructions using temporary variables
 - Static Code Analysis.
 - Compiler Design and Code Transformation.
 
-### Points :
-1. (a) Syntax analysis phase output is an abstract syntax tree.
-2. (b) Abstract syntax tree is a condensed form of parse tree.
-3. (c) Abstract syntax tree should not have keywords as leaves.
-
