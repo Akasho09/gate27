@@ -80,24 +80,28 @@ Section 10: Computer Networks. ✅
 ---
 ## Practice Tg 
 1. Operating System 
-    1  ✅
-    2  ✅
-    3 ...
+    1.  ✅
+    2.  ✅
+    3. ...
 
 2. Algorithms
-    1  ✅
-    2  ✅
-    3  ✅
+    1.  ✅
+    2.  ✅
+    3.  ✅
+    4. 
 
 
 3. Programming and Data Structures 
-    1  ✅
-    2  ✅
-    3  ✅
+    1. ✅
+    2. ✅
+    3. ✅
+    4. ✅
+    5. ✅
+    6. ✅
 
 
 4. Computer Networks
-1  - 12 Q's done.
+    1.  - 12 Q's done.
 
 
 5. Compiler Design
@@ -109,6 +113,11 @@ Section 10: Computer Networks. ✅
 
 
 7. Theory of Computation
+    1.  ✅
+    2.  ✅
+    3.  
+    4. 
+
 8. Computer Organization and Architecture
 9. Databases
 
