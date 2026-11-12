@@ -15,7 +15,7 @@ is a combinational logic circuit that adds two single-bit binary numbers and pro
 - A Full Adder is a combinational logic circuit that adds three single-bit binary inputs and produces two outputs:
 1. Sum (S): Result of binary addition. = A xor B xor C
 2. Carry-out (Cout): Carry generated from the addition.
-    - If any 2 are 1's ie xy + yz +zx. or (x xor y).z + x.y
+>   - If any 2 are 1's ie xy + yz +zx. or (x xor y).z + x.y
 - Unlike a Half Adder, a Full Adder can accept a carry input from the previous stage.
 ![alt text](image-2.png)
 
@@ -30,6 +30,13 @@ OR
 
 - The Carry function of a Full Adder is also called:
 C. Majority function
+
+### Ripple Carry Adder Explained
+> T_total = (n-1) T_c + T_s
+>  Actual critical path delay is: max(n*Tc , (n-1) T_c + T_s)
+Tc = carry dealy.
+Ts = sum delay.
+- n = No of bits.
 
 ## Half Subtractor
 - A Half Subtractor is a combinational logic circuit used to subtract one single-bit binary number from another single-bit binary number.

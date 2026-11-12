@@ -150,11 +150,15 @@ An OR gate can be implemented using `3` NAND gates.
 A NOT gate can be implemented using just `1` NAND gate.
 
 ## Full Adder using NAND :
-10
+9
+![alt text](image-20.png)
 
 ## Half Adder using NAND :
 5
+![alt text](image-21.png)
 
+## Both HALF and FULL Adder Simultameouly :
+- First HA is common to both ===> 9+5 - 4 = 10 NAND's.
 
 
 

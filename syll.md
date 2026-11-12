@@ -58,11 +58,11 @@ control, socket API; DNS and HTTP.
 
 
 ---
-Section 2: Digital Logic
 Section 3: Computer Organization and Architecture
 
 Section 9: Databases
 
+Section 2: Digital Logic ....✅
 Section 1: Engineering Mathematics ....✅
 Section 6: Theory of Computation ....✅
 Section 7: Compiler Design ....✅
@@ -80,20 +80,20 @@ Section 10: Computer Networks. ✅
 ---
 ## Practice Tg 
 1. Operating System 
-1  ✅
-2  ✅
-3 ...
+    1  ✅
+    2  ✅
+    3 ...
 
 2. Algorithms
-1  ✅
-2  ✅
-3  ✅
+    1  ✅
+    2  ✅
+    3  ✅
 
 
 3. Programming and Data Structures 
-1  ✅
-2  ✅
-3  ✅
+    1  ✅
+    2  ✅
+    3  ✅
 
 
 4. Computer Networks
@@ -101,9 +101,18 @@ Section 10: Computer Networks. ✅
 
 
 5. Compiler Design
-1  ✅
+    1. ✅
 
 
+6. Digital Logic :
+    1.  ✅
 
 
+7. Theory of Computation
+8. Computer Organization and Architecture
+9. Databases
+
+
+10. Engineering Mathematics
+11. Apti
 

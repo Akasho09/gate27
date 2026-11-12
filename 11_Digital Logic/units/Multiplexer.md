@@ -49,6 +49,11 @@ The binary value of the selection lines indicates the selected input number.
 1. Inside working of DeMultplixer:
 ![alt text](image-5.png)
 
+> Neither MUX nor DeMUX is universally a universal circuit by itself. 
+- However, a MUX can be used as a universal logic element under suitable input connections.
+> MUX is a universal logic circuit.
+
+
 ## Cascading Multiplexer
 - Cascading multiplexers means connecting multiple smaller MUXes together to construct a larger MUX.
 
@@ -88,4 +93,7 @@ Suppose we have only 2:1 MUXes, but we need to construct a 4:1 MUX.
 2. If D_1=1, output = 01.
 3. If D_2=1, output = 10.
 4. If D_3=1, output = 11.
+
+2. Decoder
+![alt text](image-22.png)
 
