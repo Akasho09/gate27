@@ -61,6 +61,15 @@ A Double Complement = A.
  (A.B)` = A` + B`
 ```
 
+Gate	Commutative	    Associative
+AND	    Yes	            Yes
+OR	    Yes	            Yes
+XOR	    Yes	            Yes
+NAND	Yes	            No
+NOR	    Yes	            No
+XNOR	Yes	            No
+NOT	    N/A	            N/A
+
 ## Canonical Sum of Product (SOP)
 Canonical Sum of Products (SOP) is a standard form of representing a Boolean function in which each product term contains all the input variables exactly once, either in complemented or uncomplemented form.
 - It is also called the Sum of Minterms.
@@ -87,9 +96,9 @@ Variables and their complements remain unchanged.
 ## De Morgan's laws:
 ```yml
 ____
-A+B = A`.B`
+A+B = A`. B`
 ____
-A`.B` = A`+B`
+A`.B` = A`+ B`
 
 ```
 
@@ -122,4 +131,30 @@ A. 3
 ### Gray Code
 - Gray Code is a binary number system in which two consecutive numbers differ in exactly one bit.
 - It is also called Reflected Binary Code.
+ 
+# GATES  USING NAND : 
+
+## XOR Gate using NAND :
+- An XOR gate can be implemented using `4` NAND gates.
+
+![alt text](image-18.png)
+
+## OR Gate Using NAND Gates
+An OR gate can be implemented using `3` NAND gates.
+![alt text](image-19.png)
+
+## AND gate using NAND
+- `2` NAND gates
+
+## NOT Gate Using NAND Gate
+A NOT gate can be implemented using just `1` NAND gate.
+
+## Full Adder using NAND :
+10
+
+## Half Adder using NAND :
+5
+
+
+
 

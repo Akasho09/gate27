@@ -25,6 +25,9 @@ AND	2
 OR	1
 Total	5
 
+OR
+> 2 Half Adders and 1 OR
+
 - The Carry function of a Full Adder is also called:
 C. Majority function
 
