@@ -115,7 +115,7 @@ Section 10: Computer Networks. ✅
 7. Theory of Computation
     1.  ✅
     2.  ✅
-    3.  
+    3.  ✅
     4. 
 
 8. Computer Organization and Architecture

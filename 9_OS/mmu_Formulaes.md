@@ -37,3 +37,19 @@ If each PTE contains only the physical frame number:
 1. Optimal Page Size
 > P^2=2.E.S
 
+
+## LRU
+1. Basic rules
+    - HIT: Promote the page to MRU.
+    - FAULT with empty frame: Insert the page as MRU.
+    - FAULT with full frames: Replace LRU with the new page, which becomes MRU.
+
+
+## Page Replacements :
+1. Fault => Replacement.
+
+2. The page fault service takes 5000 ns.  VS Each page transfer to/from the disk takes 5000 ns
+- In 1st case both memory acesses and adding to PT is considered already. => 5120 in first and 5220 in 2nd.
+
+
+
