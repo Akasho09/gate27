@@ -89,3 +89,9 @@ Different symbol table implementations (arrays, linked lists, hash tables, binar
 1. (a) Syntax analysis phase output is an abstract syntax tree.
 2. (b) Abstract syntax tree is a condensed form of parse tree.
 3. (c) Abstract syntax tree should not have keywords as leaves.
+
+
+## Incompletely Specified Automaton 
+is a finite automaton in which the transition function is not defined for every state-input symbol combination.
+In simple words, some transitions are missing or unspecified.
+

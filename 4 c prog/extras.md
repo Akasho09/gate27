@@ -72,6 +72,7 @@ traversals?
 (b) Preorder and Postorder
 > Inorder is Required.
 
+9. In C++, explicitly calling main() is prohibited. In C, it is allowed.
 
 
 ## RE ATTEMPT 

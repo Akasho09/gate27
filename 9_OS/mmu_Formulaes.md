@@ -37,6 +37,8 @@ If each PTE contains only the physical frame number:
 1. Optimal Page Size
 > P^2=2.E.S
 
+2. + TLB + Cache
+![alt text](image-2.png)
 
 ## LRU
 1. Basic rules
