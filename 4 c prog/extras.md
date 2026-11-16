@@ -43,6 +43,12 @@ Therefore,
 6. AVL Tree (Adelson-Velsky and Landis Tree)
 - An AVL Tree is a self-balancing Binary Search Tree (BST) in which the height difference between the left and right subtrees of every node is at most 1.
 
+> Number of (minimum) nodes = S ( h – 1) + S ( h – 2) + 1
+- S (1) = 2 .
+- s(2) = 4 ....
+> Number of (maximum) nodes = 2h + 1 – 1
+
+
 - Four Types of Rotations
 - When insertion or deletion makes an AVL tree unbalanced, rotations restore balance.
     1. A. LL (Left-Left) Rotation
@@ -52,6 +58,7 @@ Therefore,
     2. B. RR (Right-Right) Rotation
     Occurs when a node is inserted into the right subtree of the right child.
     - Solution: Single Left Rotation.
+    ![alt text](image-5.png)
 
     3. C. LR (Left-Right) Rotation
     Occurs when a node is inserted into the right subtree of the left child.
@@ -73,6 +80,9 @@ traversals?
 > Inorder is Required.
 
 9. In C++, explicitly calling main() is prohibited. In C, it is allowed.
+
+10. For loop in a C-program, if the condition is missing
+(b) it is assumed to be present and taken to be true
 
 
 ## RE ATTEMPT 

@@ -82,8 +82,8 @@ Section 10: Computer Networks. ✅
 1. Operating System 
     1.  ✅
     2.  ✅
-    3. 33 onwards questions on `MULTI LEVEL PAGING + TLB + CACHE `
-
+    3.  33 onwards questions on `MULTI LEVEL PAGING + TLB + CACHE`
+    
 
 2. Algorithms
     1.  ✅
@@ -100,6 +100,11 @@ Section 10: Computer Networks. ✅
     5. ✅
     6. ✅
     7. ✅
+    8. ✅
+    9. ✅
+    10. ✅
+    11. ✅
+    12. ✅
 
 
 4. Computer Networks
@@ -123,9 +128,11 @@ Section 10: Computer Networks. ✅
     4. 
 
 8. Computer Organization and Architecture
-9. Databases
 
+9. Databases
+    1.  ✅
 
 10. Engineering Mathematics
 11. Aptitude
+
 

@@ -21,7 +21,17 @@ strcat() concatenates (joins) two strings.
     5. Returns a pointer to the destination.
     6. Source and destination must not overlap.
 
+3. puts() 
+- is a standard library function used to print a string to the standard output (stdout), automatically adding a newline (\n) at the end.
+> int puts(const char *str);
 
+- Feature	     puts()	printf()
+Prints           strings	Yes	Yes
+Automatically    adds \n	Yes	No
+Format           specifiers	No	Yes
+Prints           integers directly	No	Yes
+Return            type	int	int
+Header	          stdio.h	stdio.h
 
 ## Examples :
 1. 

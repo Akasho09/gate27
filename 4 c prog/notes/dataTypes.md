@@ -125,9 +125,11 @@ A macro in C is a name or code fragment defined using the #define preprocessor d
 ```c
 #define PI 3.14
 #define MAX 100
+#define SQUARE(x) ((x)*(x))
 
 int main() {
     float area = PI * 5 * 5;
+    printf("%d", SQUARE(5));
 }
 
 ```
