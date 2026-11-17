@@ -60,4 +60,45 @@ T(n)=Cn * (1+1/3+1/9+.....)
 1. 2^n×2^n ie 2^2n CAN NOT be written as Θ(2^n)
 
 
+## 
+```c
+for i = 1 to n do
+for j = i to n do
+for k = j + 1 to n do
+```
+> totat no of executions : n(n-1)(n+1)/6
+This is one-sixth of the product of three consecutive integers.
+
+## Hamiltonian cycle
+- A Hamiltonian Cycle is a cycle in an undirected or directed graph that visits every vertex exactly once and returns to the starting vertex.
+
+1. Hamiltonian Path	
+- Visits every vertex exactly once	
+- Does not need to return to starting vertex	
+- Does not need to form a cycle	
+
+2. Hamiltonian → Visits every vertex.
+- Euler → Visits every edge.
+
+3. Complexity
+Determining whether a general graph contains a Hamiltonian cycle is an NP-Complete problem.
+- Hamiltonian Cycle: NP-Complete.
+- Finding a Hamiltonian Cycle: NP-Hard optimization/search problem.
+
+## Maximum Subarray Sum Problem
+1. Brute Force Approach
+Time Complexity: \(O(n^3)\)
+Space Complexity: \(O(1)\)
+
+2. Improved Brute Force Approach
+Time Complexity: \(O(n^2)\)
+Space Complexity: \(O(1)\)
+
+3. Divide and Conquer Approach
+T(n)=O(n\log n)
+Space Complexity: \(O(\log n)\) due to recursion stack.
+
+4. Kadane's Algorithm (Dynamic Programming)
+Time Complexity: \(O(n)\)
+Space Complexity: \(O(1)\)
 

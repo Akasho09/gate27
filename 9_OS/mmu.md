@@ -66,3 +66,5 @@ Page is not present in RAM
 OS loads the required page from secondary storage into RAM
 
 Updates Page Table and restarts the instruction
+
+>

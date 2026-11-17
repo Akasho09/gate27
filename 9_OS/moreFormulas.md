@@ -44,5 +44,5 @@ is a property of the Critical Section Problem that ensures a process does not ha
 ## Catlan number :
 > (2*n) C n / (n+1)
 
-## 
+## If page tables are physically cached, use cache access time (including cache miss penalty) for page table accesses too.
 

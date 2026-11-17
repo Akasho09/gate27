@@ -35,6 +35,14 @@ Occurs when a transaction reads the same data item twice and gets different valu
 4. Incorrect Summary Problem
 Occurs when one transaction calculates an aggregate value while another transaction is updating the same data items.
 
+---
+1. Lost Update: Updates overwrite each other.
+2. Dirty Read: Reading uncommitted data.
+3. Unrepeatable Read: Same transaction reads the same item twice but gets different values.
+4. Incorrect Summary: Aggregate calculation gets inconsistent data due to concurrent updates.
+---
+
+
 ## ACID Properties in DBMS
 ACID properties are a set of four properties that ensure reliable and correct execution of database transactions.
 
@@ -199,4 +207,13 @@ A schedule is called Cascadeless if a transaction reads a data item only after t
 
 > Strict 
 - Reader and writer both wait until previous writer commits/aborts
+
+## CARSH OCCOURS :
+Golden rule:
+- Committed transaction → REDO its operations.
+- Uncommitted transaction → UNDO its operations.
+
+## General Formula
+- If transaction T₁ has n₁ operations, T₂ has n₂ operations, and T₃ has n₃ operations, the total number of possible interleaved (concurrent) schedules is given by the multinomial coefficient formula:
+> Total Schedules = (n1+n2+n3)! / n1!.n2!.n3!
 
