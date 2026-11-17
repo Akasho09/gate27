@@ -131,6 +131,7 @@ Section 10: Computer Networks. ✅
 
 9. Databases
     1.  ✅
+    2.  ✅
 
 10. Engineering Mathematics
 11. Aptitude
