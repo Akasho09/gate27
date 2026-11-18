@@ -61,3 +61,93 @@ Final Update/Write: Same final write values.
 
 > A blind write occurs when a transaction writes a data item without reading it first.
 
+## Shared Exclusive Locking Protocol 
+- Lock-based protocols are used in DBMS to control concurrent access to data items and maintain database consistency.
+- A Lock is a mechanism that controls access to a data item by multiple transactions.
+
+There are two basic types of locks:
+1. Shared Lock (S-lock)
+2. Exclusive Lock (X-lock)
+
+1. Shared Lock (S-Lock)
+A Shared Lock is also called a Read Lock.
+- A transaction can read a data item.
+- Multiple transactions can hold a shared lock on the same data item simultaneously.
+- A transaction cannot write the data item while holding only a shared lock.
+
+2. Exclusive Lock (X-Lock)
+An Exclusive Lock is also called a Write Lock.
+- A transaction can read and write a data item.
+- Only one transaction can hold an exclusive lock on a data item at a time.
+- No other transaction can hold either an S-lock or X-lock on that item.
+
+### 3. Lock Compatibility Matrix
+- The compatibility matrix tells us whether two transactions can hold locks on the same data item simultaneously.
+
+Existing Lock ↓ / Requested Lock →	        Shared (S)	        Exclusive (X)
+Shared (S)	                                Compatible	        Not Compatible
+Exclusive (X)		                        Not Compatible  	Not Compatible
+
+## 6. Two-Phase Locking Protocol (2PL)
+The basic Shared-Exclusive locking protocol does not by itself guarantee conflict serializability.
+- To guarantee conflict serializability, DBMS uses the Two-Phase Locking Protocol (2PL).
+It has two phases:
+1. Phase 1 : Growing Phase
+    - Transaction can acquire locks.
+    - Transaction can upgrade locks.
+    - Transaction cannot release any lock.
+
+2. Phase 2 : Shrinking Phase
+    - Transaction can release locks.
+    - Transaction can downgrade locks.
+    - Transaction cannot acquire new locks or upgrade locks.
+
+- The point at which a transaction acquires its last lock is called the `Lock Point`.
+- After the lock point, the transaction enters the shrinking phase.
+
+### Props:
+1. Guarantees Conflict Serializability
+
+2. Deadlocks and Stravation are Possible
+
+3. Cascading Rollback is Possible
+- Basic 2PL does not prevent cascading rollback.
+A transaction may release its locks before committing, allowing another transaction to read its uncommitted data.
+
+4. Transactions May Not Be Recoverable
+
+## 6. Types of 2PL
+There are four important variants of Two-Phase Locking.
+
+1. A. Basic 2PL
+- Follows growing and shrinking phases.
+- Locks can be released before commit.
+- Guarantees conflict serializability.
+- Deadlocks are possible.
+- Cascading rollback is possible.
+
+2. B. Strict 2PL
+- Holds all exclusive (X) locks until commit or abort. 
+>    => Produces Cascadeless Rollbacks and Recoverable Schedule.
+- Shared locks may be released earlier.
+- Prevents dirty reads and dirty writes.
+- Produces strict schedules.
+> - Deadlocks and Stravation are possible.
+
+3. C. Rigorous 2PL
+- Holds both shared (S) and exclusive (X) locks until commit or abort.
+>    => Produces Cascadeless Rollbacks and Recoverable Schedule.
+- Releases all locks only after transaction completion.
+- Produces strict schedules.
+> - Deadlocks and Stravation are possible.
+
+4. D. Conservative 2PL (Static 2PL)
+- A transaction acquires all required locks before it starts execution.
+- If all locks are not available, it waits without acquiring any.
+> - Prevents deadlocks.
+- Guarantees conflict serializability.
+
+```yml
+Q: A conflict serializable schedule is always allowed by 2PL. TRUE
+Q: A conflict serializable schedule is always allowed by 2PL. FALSE
+```

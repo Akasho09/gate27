@@ -186,7 +186,7 @@ If all three conditions are satisfied, the operations are conflicting.
 ## Irrecoverable Vs Recoverable Schedules
 
 1. Recoverable Schedule
-A schedule is called Recoverable if a transaction commits only after the transaction whose data it has read has committed.
+> A schedule is called Recoverable if a transaction commits only after the transaction whose data it has read has committed.
 If T2 reads a value written by T1, then T2 must commit after T1 commits.
 
 2. Irrecoverable Schedule

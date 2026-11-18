@@ -56,17 +56,16 @@ control, socket API; DNS and HTTP.
 
 
 
-
 ---
 Section 3: Computer Organization and Architecture
 
-Section 9: Databases
 
 Section 2: Digital Logic ....✅
 Section 1: Engineering Mathematics ....✅
 Section 6: Theory of Computation ....✅
 Section 7: Compiler Design ....✅
 Section 11: Aptitude n English   .... ✅
+Section 9: Databases  .... ✅
 
 Section 4: Programming and Data Structures ✅
 Section 5: Algorithms ✅
@@ -136,7 +135,8 @@ Section 10: Computer Networks. ✅
 9. Databases
     1.  ✅
     2.  ✅
-    3.  21 onwards.
+    3.  ✅
+    4. 12 onwards on tuple calculus
 
 10. Engineering Mathematics
 11. Aptitude
